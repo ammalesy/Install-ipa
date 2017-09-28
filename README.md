@@ -26,3 +26,4 @@ Install and debug iPhone apps without using Xcode. Designed to work on unjailbro
 ## Notes
 
 * With some modifications, it may be possible to use this without Xcode installed; however, you would need a copy of the relevant DeveloperDiskImage.dmg (included with Xcode). GDB would also run slower as symbols would be downloaded from the device on-the-fly.
+# Install-ipa
