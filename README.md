@@ -2,7 +2,7 @@
 
 # Install-ipa
 ==========
-Install ipa application on iOs device.
+Install ipa application on iOS device.
 
 ## Requirements
 
