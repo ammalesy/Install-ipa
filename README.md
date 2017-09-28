@@ -8,6 +8,8 @@ Install ipa application on iOS device.
 
 * Xcode must be installed, along with the SDK for your iOS version.
 
+## Install
+* `make fruitstrap`
 ## Usage
 
 * `sh install.sh [-d] <filename | last>`
