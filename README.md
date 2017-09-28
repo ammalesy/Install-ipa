@@ -11,8 +11,8 @@ Install ipa application on iOS device.
 ## Usage
 
 * `sh install.sh [-d] <filename | last>`
-* -d download item on artifactory  (10.215.99.238:8081/artifactory)
-* -d last //<=== download last item on artifactory (10.215.99.238:8081/artifactory)
+* `-d download` item on artifactory  (10.215.99.238:8081/artifactory)
+* `-d last` //<=== download last item on artifactory (10.215.99.238:8081/artifactory)
 
 ## Demo
 
