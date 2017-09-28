@@ -10,7 +10,7 @@ Install ipa application on iOs device.
 
 ## Usage
 
-* `as install.sh [-d] <filename | last>`
+* `sh install.sh [-d] <filename | last>`
 * -d download item on artifactory  (10.215.99.238:8081/artifactory)
 * -d last //<=== download last item on artifactory (10.215.99.238:8081/artifactory)
 
