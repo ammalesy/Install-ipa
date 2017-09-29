@@ -15,7 +15,7 @@ if [ $1 == "-d" ]; then
 
 	THE_FILE_NAME=$2;
 	if [ "$2" == "last" ]; then
-		THE_FILE_NAME=$(cat archives.json | ./jq '[.children[].uri]' | ./jq 'reverse' | ./jq 'limit(1;.[])' | sed -l 's/"\///g' list.txt | sed -l 's/"//g');
+		THE_FILE_NAME=$(cat archives.json | ./jq '[.children[].uri]' | ./jq 'reverse' | ./jq 'limit(1;.[])' | sed -l 's/"\///g' | sed -l 's/"//g');
 		echo "=================================================================="
 		echo "DOWNFILE FILE ========>".$THE_FILE_NAME;
 		echo "=================================================================="
