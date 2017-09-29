@@ -11,13 +11,16 @@ Install ipa application on iOS device.
 ## Install
 * `make fruitstrap`
 ## Usage
-
+(10.215.99.238:8081/artifactory)
 * `sh deploy.sh [-d] <filename | last>`
-* `-d` download item on artifactory  (10.215.99.238:8081/artifactory)
-* `-d last` download last item on artifactory (10.215.99.238:8081/artifactory)
+* `-d` download item on artifactory 
+* `-d last` download last item on artifactory 
+* `-l` list top five item on artifactory
+* `-la` list all item on artifactory  
 
 ## Demo
 
 * sh deploy.sh dev.ipa
 * sh deploy.sh -d dev.ipa
 * sh deploy.sh -d last
+* sh deploy.sh -l
