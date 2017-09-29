@@ -15,7 +15,7 @@ Install ipa application on iOS device.
 * `sh deploy.sh [-d] <filename | last>`
 * `-d` download item on artifactory (Apply cache file.)
 * `-d last` download last item on artifactory (Apply cache file.)
-* `-df` download last item on artifactory (Froce download.)
+* `-df` froce download item on artifactory
 * `-l` list top five item on artifactory
 * `-la` list all item on artifactory  
 
