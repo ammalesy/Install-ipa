@@ -1,4 +1,12 @@
 #!/bin/bash
+echo "Switch to kbank_ci2’s iMac access point."
+until $(networksetup -setairportnetwork "en0" "kbank_ci2’s iMac" "1234567890");
+do
+	sleep 1
+done
+echo "kbank_ci2’s iMac is connected!"
+
+
 file_name=""
 COMPUTER_NAME=$(scutil --get ComputerName);
 if [ $1 == "-d" ]; then
@@ -22,14 +30,11 @@ if [ $1 == "-d" ]; then
 	then
 		echo "======> ON CACHE <======"
 	else
-		
-
-		
 		echo "Downloading.....";
 		until $(wget "http://10.215.99.238:8081/artifactory/mobile-plus/iOS/Development/$THE_FILE_NAME"); do
-			echo "Download Success ^_^";
 	    	sleep 1
 		done
+		echo "Download Success ^_^";
 	fi
 	for DEVICE in $(instruments -s devices | grep -v Simulator | grep -v Known | grep -v "$COMPUTER_NAME" |cut -f 2 -d [ | cut -f 1 -d ]
 			);
@@ -61,9 +66,9 @@ elif [ $1 == "-df" ]; then
 		echo "=================================================================="
 		echo "Downloading.....";
 		until $(wget "http://10.215.99.238:8081/artifactory/mobile-plus/iOS/Development/$THE_FILE_NAME"); do
-			echo "Download Success ^_^";
 	    	sleep 1
 		done
+		echo "Download Success ^_^";
 
 		for DEVICE in $(instruments -s devices | grep -v Simulator | grep -v Known | grep -v "$COMPUTER_NAME" |cut -f 2 -d [ | cut -f 1 -d ]
 			);

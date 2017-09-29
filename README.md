@@ -13,8 +13,9 @@ Install ipa application on iOS device.
 ## Usage
 (10.215.99.238:8081/artifactory)
 * `sh deploy.sh [-d] <filename | last>`
-* `-d` download item on artifactory 
-* `-d last` download last item on artifactory 
+* `-d` download item on artifactory (Apply cache file.)
+* `-d last` download last item on artifactory (Apply cache file.)
+* `-df` download last item on artifactory (Froce download.)
 * `-l` list top five item on artifactory
 * `-la` list all item on artifactory  
 
