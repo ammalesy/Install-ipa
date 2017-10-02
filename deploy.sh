@@ -31,7 +31,7 @@ if [ $1 == "-d" ]; then
 		echo "======> ON CACHE <======"
 	else
 		echo "Downloading.....";
-		until $(wget "http://10.215.99.238:8081/artifactory/mobile-plus/iOS/Development/$THE_FILE_NAME"); do
+		until $(curl -O  "http://10.215.99.238:8081/artifactory/mobile-plus/iOS/Development/$THE_FILE_NAME"); do
 	    	sleep 1
 		done
 		echo "Download Success ^_^";
@@ -65,7 +65,7 @@ elif [ $1 == "-df" ]; then
 		echo "DOWNFILE FILE ========>".$THE_FILE_NAME;
 		echo "=================================================================="
 		echo "Downloading.....";
-		until $(wget "http://10.215.99.238:8081/artifactory/mobile-plus/iOS/Development/$THE_FILE_NAME"); do
+		until $(curl -O  "http://10.215.99.238:8081/artifactory/mobile-plus/iOS/Development/$THE_FILE_NAME"); do
 	    	sleep 1
 		done
 		echo "Download Success ^_^";
